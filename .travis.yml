@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+  - 2.6.5
+install: gem install jekyll
+script: jekyll build
+sudo: false
+cache: bundler

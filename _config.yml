@@ -1,0 +1,6 @@
+theme: private
+plugins:
+  - jekyll-paginate
+url: https://cciradih.top/
+paginate: 15
+paginate_path: "page:num"

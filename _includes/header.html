@@ -1,0 +1,13 @@
+<header>
+    <h1>Cciradih</h1>
+    <p>lim _ ( t -> oo ) i = c</p>
+    <nav>
+        <ul>
+            {% for item in site.data.navigation %}
+            <li>
+                <a href="{{ item.link }}">{{ item.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
