@@ -1,4 +1,3 @@
-remote_theme: private
 plugins:
   - jekyll-paginate
 url: https://cciradih.top/
