@@ -15,7 +15,11 @@ permalink: /about/
 
 ---
 
-这个博客是由 [Jekyll](https://jekyllrb.com/) 构建并托管在 [Github Pages](https://pages.github.com/) 上。同时应用了 [awsm.css](https://igoradamenko.github.io/awsm.css/)——比较符合我对博客定位且小众的样式。网站的主题是完全自制的，如果你对我或者我的网站感兴趣，可以通过以下方式联系我。
+这个博客是由 [Jekyll](https://jekyllrb.com/) 构建并托管在 [Github Pages](https://pages.github.com/) 上。
+
+同时应用了 [awsm.css](https://igoradamenko.github.io/awsm.css/)——比较符合我对博客定位且小众的样式。
+
+网站的主题是完全自制的，如果你对我或者我的网站感兴趣，可以通过以下方式联系我。
 
 ---
 

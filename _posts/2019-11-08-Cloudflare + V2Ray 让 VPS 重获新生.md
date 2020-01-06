@@ -2,12 +2,10 @@
 layout: post
 ---
 
-# Cloudflare 与 V2Ray 让 VPS 重获新生
-
-> * 事实上这是目前除肉身翻墙最后的法子了。
+> * 其实你要拯救 VPS，首先得有一个梯子。那么问题来了，如果有梯子，那还需要拯救这个 VPS 吗？
 
 ## 摘要
-其实你要拯救 VPS，首先得有一个梯子。那么问题来了，如果有梯子，那还需要拯救这个 VPS 吗？
+事实上这是目前除肉身翻墙最后的法子了。
 
 ## 前言
 从国庆到现在我的梯子还没恢复，不用谷歌感觉断了两条腿。偶然发现 Cloudflare 的 CDN 在国内能够直接访问，然后联想到 WebSocket 协议和最近一直在研究的 V2Ray，感觉有戏。遂实践了一下，遇到了些坑，不过总算是柳暗花明又一村。
@@ -30,11 +28,11 @@ layout: post
 ### V2Ray
 
 1. 安装
-```bash
+```shell
 bash <(curl -L -s https://install.direct/go.sh)
 ```
 2. 配置
-```bash
+```shell
 nano /etc/v2ray/config.json 
 ```
 ```json
@@ -75,18 +73,18 @@ nano /etc/v2ray/config.json
 }
 ```
 3. 启动
-```bash
+```shell
 systemctl restart v2ray
 ```
 
 ### Caddy
 
 1. 安装
-```bash
+```shell
 curl https://getcaddy.com | bash -s personal
 ```
 2. 配置
-```bash
+```shell
 nano Caddyfile
 ```
 ```
@@ -98,7 +96,7 @@ ${host} { // 域名，客户端需要一致。
 }
 ```
 3. 启动
-```bash
+```shell
 caddy -conf Caddyfile
 ```
 

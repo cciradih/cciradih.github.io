@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
-{% include head.html %}
+---
+layout: default
+---
 
-<body>
-    {% include header.html %}
-    <main>
-        <article>
-            {{ content }}
-        </article>
-    </main>
-    {% include footer.html %}
-    <script>
-        document.getElementById('year').innerText = new Date().getFullYear()
-    </script>
-</body>
-
-</html>
+<article>
+  <dl>
+    <dt>
+      <h1>{{ page.title | upcase }}</h1>
+    </dt>
+    <dd>
+      <p>{{ page.date | date: "%Y-%m-%d" }}</p>
+    </dd>
+  </dl>
+  {{ content }}
+</article>
