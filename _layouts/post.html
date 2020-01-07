@@ -7,7 +7,9 @@ layout: default
     <h1>{{ page.title | upcase }}</h1>
   </dt>
   <dd>
-    <small>In {{ page.category }} @ {{ page.date | date: "%Y-%m-%d" }}</small>
+    <small>
+      <b>$cc "in"$ {{ page.category }} $cc "at"$ {{ page.date | date: "%Y-%m-%d" }} $cc "with"$ {{ page.tags | join: ", " }}.</b>
+    </small>
   </dd>
 </dl>
 {{ content }}

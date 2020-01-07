@@ -1,6 +1,10 @@
 ---
 layout: post
 category: V2Ray
+tags:
+  - V2Ray
+  - Cloudflare
+  - Caddy
 ---
 
 > 其实你要拯救 VPS，首先得有一个梯子。那么问题来了，如果有梯子，那还需要拯救这个 VPS 吗？

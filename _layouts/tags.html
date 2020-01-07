@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% for tag in site.tags %}
+<details>
+  <summary>{{ tag[0] }}</summary>
+  <ul>
+    {% for post in tag[1] %}
+    <li>
+      <aside>{{ post.date | date: "%Y-%m-%d" }}</aside>
+      <a href="{{ post.url }}">{{ post.title | upcase}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</details>
+{% endfor %}
