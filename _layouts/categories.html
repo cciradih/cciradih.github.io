@@ -4,14 +4,14 @@ layout: default
 
 {% for category in site.categories %}
 <details>
-    <summary>{{ category[0] }}</summary>
-    <ul>
-        {% for post in category[1] %}
-        <li>
-            <aside>{{ post.date | date: "%Y-%m-%d" }}</aside>
-            <a href="{{ post.url }}">{{ post.title | upcase}}</a>
-        </li>
-        {% endfor %}
-    </ul>
+  <summary>{{ category[0] }}</summary>
+  <ul>
+    {% for post in category[1] %}
+    <li>
+      <aside>{{ post.date | date: "%Y-%m-%d" }}</aside>
+      <a href="{{ post.url }}">{{ post.title | upcase}}</a>
+    </li>
+    {% endfor %}
+  </ul>
 </details>
 {% endfor %}
