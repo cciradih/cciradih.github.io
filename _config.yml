@@ -1,7 +1,7 @@
 url: https://cciradih.top
 plugins:
-  - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
 title: Cciradih
 description: lim _ ( t -> oo ) i = c
