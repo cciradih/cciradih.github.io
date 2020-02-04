@@ -125,8 +125,8 @@ caddy -conf Caddyfile
 ## 致谢
 
 * [Cloudflare](https://www.cloudflare.com/zh-cn/)
-* [V2Ray 白话文教程](https://toutyrater.github.io/)
+* [Project V · Project V 官方网站](https://www.v2ray.com/)
 
 ## 附录
 
-* [Project V · Project V 官方网站](https://www.v2ray.com/)
+* [V2Ray 白话文教程](https://toutyrater.github.io/)
