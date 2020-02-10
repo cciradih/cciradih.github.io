@@ -27,7 +27,7 @@ apt-get install shadowsocks-libev
 ```
 2. 配置
 ```shell 
-nano /etc/v2ray/config.json 
+nano /etc/shadowsocks-libev/config.json
 ```
 ```json
 {
