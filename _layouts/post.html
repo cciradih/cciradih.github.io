@@ -4,11 +4,12 @@ layout: default
 
 <dl>
   <dt>
-    <h1>{{ page.title | upcase }}</h1>
+    <h2>{{ page.title | upcase }}</h2>
   </dt>
   <dd>
     <small>
-      <b>$cc "in"$ {{ page.category }} $cc "at"$ {{ page.date | date: "%Y-%m-%d" }} $cc "with"$ {{ page.tags | join: ", " }}.</b>
+      <b>$cc "in"$ {{ page.category }} $cc "at"$ {{ page.date | date: "%Y-%m-%d" }} $cc "with"$
+        {{ page.tags | join: ", " }}.</b>
     </small>
   </dd>
 </dl>
