@@ -15,6 +15,7 @@ tags:
 ## 准备
 
 * [Windows 10 Build 高于 19041（2020 年 5 月更新）](https://www.microsoft.com/zh-cn/software-download/windows10)
+* 下载 [Linux 内核更新包](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 * 下载 [Ubuntu 18.04 发行版](https://aka.ms/wsl-ubuntu-1804)
 * 安装 [VS Code for Windows](https://aka.ms/win32-x64-user-stable)
 
@@ -32,7 +33,9 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 ```batchfile
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
-3. 将 WSL 2 设置为默认版本
+3. 重新启动计算机
+4. 安装 Linux 内核更新包
+5. 将 WSL 2 设置为默认版本
 ```batchfile
 wsl --set-default-version 2
 ```
