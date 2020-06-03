@@ -9,8 +9,9 @@
       </li>
       {% endfor %}
       <li>
-        <form action="https://cse.google.com/cse?cx=004513966020022949442:zsgss2lhuso" method="get" id="search">
-          <input type="text" name="q" placeholder="回车搜索" onkeypress="search(event)">
+        <form action="https://cse.google.com/cse" method="get" id="search">
+          <input type="hidden" name="cx" value="004513966020022949442:zsgss2lhuso">
+          <input type="text" name="q" placeholder="回车使用谷歌搜索" onkeypress="search(event)">
         </form>
       </li>
     </ul>
