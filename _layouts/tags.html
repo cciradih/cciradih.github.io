@@ -1,17 +1,27 @@
 ---
 layout: default
 ---
-
 {% for tag in site.tags %}
-<details>
-  <summary>{{ tag[0] }}</summary>
+<article>
+  <p>{{ tag[0] }}</p>
   <ul>
     {% for post in tag[1] %}
-    <li>
-      <aside>{{ post.date | date: "%Y-%m-%d" }}</aside>
-      <a href="{{ post.url }}">{{ post.title | upcase}}</a>
-    </li>
+    <li><a href="{{ post.url }}">{{ post.title | upcase}}</a></li>
     {% endfor %}
   </ul>
-</details>
+</article>
 {% endfor %}
+
+<!-- {% for tag in site.tags %}
+{% for post in tag[1] %}
+<article>
+  <p>{{ tag[0] }}</p>
+  <header>
+    <p>{{ post.date | date: "%Y年%m月%d日" }}</p>
+    <span>
+      <a href="{{ post.url }}">{{ post.title | upcase}}</a>
+    </span>
+  </header>
+</article>
+{% endfor %}
+{% endfor %} -->

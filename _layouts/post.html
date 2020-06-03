@@ -2,15 +2,11 @@
 layout: default
 ---
 
-<dl>
-  <dt>
-    <h2>{{ page.title | upcase }}</h2>
-  </dt>
-  <dd>
-    <small>
-      <b>$cc "in"$ {{ page.category }} $cc "at"$ {{ page.date | date: "%Y-%m-%d" }} $cc "with"$
-        {{ page.tags | join: ", " }}.</b>
-    </small>
-  </dd>
-</dl>
-{{ content }}
+<article>
+  <header>
+    <p>{{ page.date | date: "%Y-%m-%d" }}</p>
+    <p>{{ page.tags | join: ", " }}</p>
+    <h1>{{ page.title | upcase }}</h1>
+  </header>
+  {{ content }}
+</article>

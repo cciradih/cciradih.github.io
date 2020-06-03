@@ -9,5 +9,33 @@
       </li>
     </ul>
   </nav>
+  <span>We have been together for</span>
+  <p id="time">Calculating...</p>
+  <span>and will always be together.</span>
   <p>© 2016 - {{ "now" | date: "%Y"}} Cciradih.top & Love with Tispbcy.</p>
 </footer>
+<script type="text/javascript">
+  // 2020.5.6 22:48
+  const startTime = new Date('06 May 2020 22:48:00 +0800').getTime()
+  setInterval(() => {
+    const nowTime = new Date().getTime()
+    let diffTime = (nowTime - startTime) / 1000
+    const day = Math.floor(diffTime / (24 * 60 * 60))
+    diffTime -= day * 24 * 60 * 60
+    let hour = Math.floor(diffTime / (60 * 60))
+    diffTime -= hour * 60 * 60
+    let minute = Math.floor(diffTime / 60)
+    diffTime -= minute * 60
+    let second = Math.floor(diffTime)
+    if (hour < 10) {
+      hour = '0' + hour
+    }
+    if (minute < 10) {
+      minute = '0' + minute
+    }
+    if (second < 10) {
+      second = '0' + second
+    }
+    document.getElementById('time').innerText = day + '.' + hour + ':' + minute + ':' + second
+  }, 1000)
+</script>
