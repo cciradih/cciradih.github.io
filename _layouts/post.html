@@ -4,8 +4,10 @@ layout: default
 
 <article>
   <header>
-    <p>{{ page.date | date: "%Y-%m-%d" }}</p>
-    <p>{{ page.tags | join: ", " }}</p>
+    <p>{{ page.content | number_of_words: "auto" }}字</p>
+    <p>{{ page.categories | array_to_sentence_string }}</p>
+    <p>{{ page.tags | array_to_sentence_string }}</p>
+    <p>{{ page.date | date: "%Y年%m月%d日" }}</p>
     <h1>{{ page.title | upcase }}</h1>
   </header>
   {{ content }}

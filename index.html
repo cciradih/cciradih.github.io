@@ -4,9 +4,12 @@ layout: default
 {% for post in paginator.posts %}
 <article>
     <header>
+        <p>{{ post.content | number_of_words: "auto" }}字</p>
+        <p>{{ post.categories | array_to_sentence_string }}</p>
+        <p>{{ post.tags | array_to_sentence_string }}</p>
         <p>{{ post.date | date: "%Y年%m月%d日" }}</p>
         <h2>
-            <a href="{{ post.url }}">{{ post.title | upcase}}</a>
+            <a href="{{ post.url }}">{{ post.title | capitalize }}</a>
         </h2>
     </header>
     <p>{{ post.excerpt }}</p>
