@@ -1,6 +1,4 @@
 - name: 首页
   link: /
-- name: 标签
-  link: /tags/
 - name: 关于
   link: /about/
