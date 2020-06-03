@@ -10,9 +10,6 @@ tags:
 
 > 其实你要拯救 VPS，首先得有一个梯子。那么问题来了，如果有梯子，那还需要拯救这个 VPS 吗？
 
-## 摘要
-事实上这是目前除肉身翻墙最后的法子了。
-
 ## 前言
 从国庆到现在我的梯子还没恢复，不用谷歌感觉断了两条腿。偶然发现 Cloudflare 的 CDN 在国内能够直接访问，然后联想到 WebSocket 协议和最近一直在研究的 V2Ray，感觉有戏。遂实践了一下，遇到了些坑，不过总算是柳暗花明又一村。
 
@@ -123,11 +120,8 @@ caddy -conf Caddyfile
 路径 | /
 底层传输安全 | tls
 
-## 致谢
+## 附录
 
 * [Cloudflare](https://www.cloudflare.com/zh-cn/)
 * [Project V · Project V 官方网站](https://www.v2ray.com/)
-
-## 附录
-
 * [V2Ray 白话文教程](https://toutyrater.github.io/)

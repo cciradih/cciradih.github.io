@@ -8,9 +8,6 @@ tags:
 
 > 听闻 Shadowsocks 也出了 Rust 版本了，~~我以后可能会更新 Rust 语言相关的文章~~。
 
-## 摘要
-最小修改 Shadowsocks 默认配置从而进行快速的部署实践。
-
 ## 前言
 最近 Shadowsocks 又能用了，我觉得吧以后不行的时候再用 V2Ray，因为 V2Ray 的 Windows 客户端和网易 UU 加速器冲突，而我不想折腾。
 
@@ -55,10 +52,7 @@ systemctl restart shadowsocks-libev
 密码 | ${password}
 加密 | chacha20-ietf-poly1305
 
-## 致谢
-
-* [Shadowsocks - A secure socks5 proxy](https://shadowsocks.org/en/index.html)
-
 ## 附录
 
+* [Shadowsocks - A secure socks5 proxy](https://shadowsocks.org/en/index.html)
 * [Shadowsocks - Quick Guide](https://shadowsocks.org/en/config/quick-guide.html)
