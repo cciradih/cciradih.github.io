@@ -1,6 +1,5 @@
 ---
 layout: post
-category: Shadowsocks
 tags:
   - Shadowsocks
 ---

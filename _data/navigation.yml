@@ -1,7 +1,5 @@
 - name: 首页
   link: /
-- name: 分类
-  link: /categories/
 - name: 标签
   link: /tags/
 - name: 关于

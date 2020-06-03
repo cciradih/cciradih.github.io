@@ -1,6 +1,5 @@
 ---
 layout: post
-category: V2Ray
 tags:
   - V2Ray
   - Cloudflare
