@@ -81,7 +81,7 @@ generateResolvConf = false
 ## 提示
 
 * 使用 `code -r .` 在 WSL 中打开当前目录。
-* 用[阿里云源](mirrors.aliyun.com)替换默认的源。
+* 替换默认源。
 * 安装 Privoxy 转发 Shadowsocks 的 Socks5 协议科学上网。
 * 直接使用 V2Ray 的 HTTP 代理端口科学上网。
 
