@@ -65,7 +65,6 @@ code /etc/resolv.conf
 # generateResolvConf = false
 nameserver 1.1.1.1
 nameserver 1.1.1.1
-
 ```
 6. 创建 WSL DNS 配置策略
 ```bash
