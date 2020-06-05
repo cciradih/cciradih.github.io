@@ -13,14 +13,13 @@
   const startTime = new Date('06 May 2020 22:48:00 +0800').getTime()
   setInterval(() => {
     const nowTime = new Date().getTime()
-    let diffTime = (nowTime - startTime) / 1000
+    let diffTime = (new Date().getTime() - startTime) / 1000
     const day = Math.floor(diffTime / (24 * 60 * 60))
-    diffTime -= day * 24 * 60 * 60
+    diffTime %= 24 * 60 * 60
     let hour = Math.floor(diffTime / (60 * 60))
-    diffTime -= hour * 60 * 60
+    diffTime %= 60 * 60
     let minute = Math.floor(diffTime / 60)
-    diffTime -= minute * 60
-    let second = Math.floor(diffTime)
+    let second = Math.floor(diffTime %= 60)
     if (hour < 10) {
       hour = '0' + hour
     }

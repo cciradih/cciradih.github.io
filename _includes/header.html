@@ -13,16 +13,9 @@
       <li>
         <form action="https://cse.google.com/cse" method="get" id="search">
           <input type="hidden" name="cx" value="004513966020022949442:zsgss2lhuso">
-          <input type="text" name="q" placeholder="回车使用谷歌站内搜索" onkeypress="search(event)">
+          <input type="text" name="q" placeholder="回车使用谷歌站内搜索">
         </form>
       </li>
     </ul>
   </nav>
 </header>
-<script type="text/javascript">
-  function search(event) {
-    if (event.key == "Enter") {
-      document.getElementById('search').submit()
-    }
-  }
-</script>
