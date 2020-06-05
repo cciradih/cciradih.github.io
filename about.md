@@ -7,14 +7,6 @@ permalink: /about/
 
 当然我比较幸运，现在脱产读书摆脱了 [996](https://996.icu/#/zh_CN)。
 
-`lim _ ( t -> oo ) i = c`
-
-是 $ lim _ ( t -> oo ) i = c $ 的 *AsciiMath* 代码。意思是：
-
-> **共产主义是意识形态当时间趋近于无穷的极限。**
-
-如果你能认可这句话，那很高兴我们是同志了。
-
 ---
 
 这个博客是由 [Jekyll](https://jekyllrb.com/) 构建并托管在 [Github Pages](https://pages.github.com/) 上。
