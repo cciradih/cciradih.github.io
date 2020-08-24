@@ -10,26 +10,39 @@
   <p>© 2016 - {{ "now" | date: "%Y"}} Cciradih.top.</p> -->
 </footer>
 <script type="text/javascript">
+  const xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        const menus = JSON.parse(xhr.responseText).menus;
+        const day = new Date().getDay();
+        document.getElementById("menuA").innerText = menus[day * 2].name
+        document.getElementById("menuB").innerText = menus[day * 2 + 1].name
+      }
+    }
+  };
+  xhr.open("GET", "https://limtooic.herokuapp.com/menu/weekly/latest/", true);
+  xhr.send();
   // 2020.5.6 22:48
-  const startTime = new Date('06 May 2020 22:48:00 +0800').getTime()
-  setInterval(() => {
-    const nowTime = new Date().getTime()
-    let diffTime = (new Date().getTime() - startTime) / 1000
-    const day = Math.floor(diffTime / (24 * 60 * 60))
-    diffTime %= 24 * 60 * 60
-    let hour = Math.floor(diffTime / (60 * 60))
-    diffTime %= 60 * 60
-    let minute = Math.floor(diffTime / 60)
-    let second = Math.floor(diffTime %= 60)
-    if (hour < 10) {
-      hour = '0' + hour
-    }
-    if (minute < 10) {
-      minute = '0' + minute
-    }
-    if (second < 10) {
-      second = '0' + second
-    }
-    document.getElementById('time').innerText = day + '.' + hour + ':' + minute + ':' + second
-  }, 1000)
+  // const startTime = new Date('06 May 2020 22:48:00 +0800').getTime()
+  // setInterval(() => {
+  //   const nowTime = new Date().getTime()
+  //   let diffTime = (new Date().getTime() - startTime) / 1000
+  //   const day = Math.floor(diffTime / (24 * 60 * 60))
+  //   diffTime %= 24 * 60 * 60
+  //   let hour = Math.floor(diffTime / (60 * 60))
+  //   diffTime %= 60 * 60
+  //   let minute = Math.floor(diffTime / 60)
+  //   let second = Math.floor(diffTime %= 60)
+  //   if (hour < 10) {
+  //     hour = '0' + hour
+  //   }
+  //   if (minute < 10) {
+  //     minute = '0' + minute
+  //   }
+  //   if (second < 10) {
+  //     second = '0' + second
+  //   }
+  //   document.getElementById('time').innerText = day + '.' + hour + ':' + minute + ':' + second
+  // }, 1000)
 </script>
