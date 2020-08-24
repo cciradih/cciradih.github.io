@@ -14,15 +14,23 @@ layout: default
     {{ post.excerpt }}
 </article>
 {% endfor %}
-<p>
-    {% if paginator.previous_page != nil %}
-    <button>
-        <a href="{{paginator.previous_page_path}}">前一页</a>
-    </button>
-    {% endif %}
-    {% if paginator.next_page != nil %}
-    <button>
-        <a href="{{paginator.next_page_path}}">后一页</a>
-    </button>
-    {% endif %}
-</p>
+<article>
+    <nav>
+        <ul>
+            {% if paginator.previous_page != nil %}
+            <li>
+                <button>
+                    <a href="{{paginator.previous_page_path}}">前一页</a>
+                </button>
+            </li>
+            {% endif %}
+            {% if paginator.next_page != nil %}
+            <li>
+                <button>
+                    <a href="{{paginator.next_page_path}}">后一页</a>
+                </button>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+</article>
