@@ -14,10 +14,13 @@
   xhr.onreadystatechange = function () {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
-        const menus = JSON.parse(xhr.responseText).menus;
+        const meatMenuSet = JSON.parse(xhr.responseText).meatMenuSet;
+        const soupMenuSet = JSON.parse(xhr.responseText).soupMenuSet;
+        const vegetableMenuSet = JSON.parse(xhr.responseText).vegetableMenuSet;
         const day = new Date().getDay();
-        document.getElementById("menuA").innerText = menus[day * 2].name
-        document.getElementById("menuB").innerText = menus[day * 2 + 1].name
+        document.getElementById("meat").innerText = meatMenuSet[day].name
+        document.getElementById("vegetable").innerText = soupMenuSet[day].name
+        document.getElementById("soup").innerText = vegetableMenuSet[day].name
       }
     }
   };
