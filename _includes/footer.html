@@ -19,8 +19,8 @@
         const vegetableMenuSet = JSON.parse(xhr.responseText).vegetableMenuSet;
         const day = new Date().getDay();
         document.getElementById("meat").innerText = meatMenuSet[day].name
-        document.getElementById("vegetable").innerText = soupMenuSet[day].name
-        document.getElementById("soup").innerText = vegetableMenuSet[day].name
+        document.getElementById("vegetable").innerText = vegetableMenuSet[day].name
+        document.getElementById("soup").innerText = soupMenuSet[day].name
       }
     }
   };
