@@ -10,22 +10,22 @@
   <p>© 2016 - {{ "now" | date: "%Y"}} Cciradih.top.</p>
 </footer>
 <script type="text/javascript">
-  const xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === XMLHttpRequest.DONE) {
-      if (xhr.status === 200) {
-        const meatMenuSet = JSON.parse(xhr.responseText).meatMenuSet;
-        const soupMenuSet = JSON.parse(xhr.responseText).soupMenuSet;
-        const vegetableMenuSet = JSON.parse(xhr.responseText).vegetableMenuSet;
-        const day = new Date().getDay();
-        document.getElementById("meat").innerText = meatMenuSet[day].name
-        document.getElementById("vegetable").innerText = vegetableMenuSet[day].name
-        document.getElementById("soup").innerText = soupMenuSet[day].name
-      }
-    }
-  };
-  xhr.open("GET", "https://limtooic.herokuapp.com/menu/weekly/latest/", true);
-  xhr.send();
+  // const xhr = new XMLHttpRequest();
+  // xhr.onreadystatechange = function () {
+  //   if (xhr.readyState === XMLHttpRequest.DONE) {
+  //     if (xhr.status === 200) {
+  //       const meatMenuSet = JSON.parse(xhr.responseText).meatMenuSet;
+  //       const soupMenuSet = JSON.parse(xhr.responseText).soupMenuSet;
+  //       const vegetableMenuSet = JSON.parse(xhr.responseText).vegetableMenuSet;
+  //       const day = new Date().getDay();
+  //       document.getElementById("meat").innerText = meatMenuSet[day].name
+  //       document.getElementById("vegetable").innerText = vegetableMenuSet[day].name
+  //       document.getElementById("soup").innerText = soupMenuSet[day].name
+  //     }
+  //   }
+  // };
+  // xhr.open("GET", "https://limtooic.herokuapp.com/menu/weekly/latest/", true);
+  // xhr.send();
   // 2020.5.6 22:48
   // const startTime = new Date('06 May 2020 22:48:00 +0800').getTime()
   // setInterval(() => {
