@@ -4,7 +4,6 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-toc
 title: Limtooic
 description: lim _ ( t -> oo ) i = c
 author: Cciradih
@@ -26,5 +25,3 @@ jekyll-archives:
   permalinks:
     category: '/category/:name/'
     tag: '/tag/:name/'
-toc:
-  max_level: 3
