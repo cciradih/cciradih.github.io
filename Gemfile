@@ -1,5 +1,5 @@
-# source "https://rubygems.org"
-source "https://mirrors.aliyun.com/rubygems/"
+source "https://rubygems.org"
+# source "https://mirrors.aliyun.com/rubygems/"
 gem "jekyll"
 gem 'jekyll-archives'
 gem "jekyll-paginate"
