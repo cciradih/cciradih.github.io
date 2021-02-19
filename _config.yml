@@ -1,9 +1,11 @@
 url: https://cciradih.top
 plugins:
+  - jekyll-archives
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
-title: Cciradih
+  - jekyll-toc
+title: Limtooic
 description: lim _ ( t -> oo ) i = c
 author: Cciradih
 logo: /assets/logo.png
@@ -16,3 +18,13 @@ social:
 lang: zh-Hans
 paginate: 5
 paginate_path: "page:num"
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
+toc:
+  max_level: 3

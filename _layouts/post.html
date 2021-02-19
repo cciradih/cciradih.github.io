@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <article>
   <header>
     <p>{{ page.categories | array_to_sentence_string }}</p>
@@ -9,5 +8,6 @@ layout: default
     <p>{{ page.date | date: "%Y年%m月%d日" }}</p>
     <h1>{{ page.title | upcase }}</h1>
   </header>
+  <aside>{% toc %}</aside>
   {{ content }}
 </article>

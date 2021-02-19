@@ -2,7 +2,6 @@
 layout: about
 permalink: /about/
 ---
-
 你好，我是克希雷狄（Cciradih），前全干工程师（Full Work Developer）。
 
 ~~当然我比较幸运，现在脱产读书摆脱了 [996](https://996.icu/#/zh_CN)。~~

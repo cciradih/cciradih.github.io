@@ -1,5 +1,6 @@
 ---
 layout: post
+toc: true
 categories:
   - 科学上网
 tags:

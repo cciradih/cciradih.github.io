@@ -1,4 +1,8 @@
 - name: 首页
   link: /
+- name: 归档
+  link: /category/
+- name: 标签
+  link: /tag/
 - name: 关于
   link: /about/
