@@ -16,23 +16,28 @@
   // 2020.12.31 07:18
   const startTime = new Date('31 Dec 2020 07:18:00 +0800').getTime()
   setInterval(() => {
-    const nowTime = new Date().getTime()
-    let diffTime = (new Date().getTime() - startTime) / 1000
-    const day = Math.floor(diffTime / (24 * 60 * 60))
-    diffTime %= 24 * 60 * 60
-    let hour = Math.floor(diffTime / (60 * 60))
-    diffTime %= 60 * 60
-    let minute = Math.floor(diffTime / 60)
-    let second = Math.floor(diffTime %= 60)
+    const nowTime = new Date().getTime();
+    let diffTime = (nowTime - startTime) / 1000;
+    let month = Math.floor(diffTime / (30 * 24 * 60 * 60));
+    diffTime %= 30 * 24 * 60 * 60;
+    let day = Math.floor(diffTime / (24 * 60 * 60));
+    diffTime %= 24 * 60 * 60;
+    let hour = Math.floor(diffTime / (60 * 60));
+    diffTime %= 60 * 60;
+    let minute = Math.floor(diffTime / 60);
+    let second = Math.floor((diffTime %= 60));
+    if (month < 10) {
+      month = "0" + month;
+    }
     if (hour < 10) {
-      hour = '0' + hour
+      hour = "0" + hour;
     }
     if (minute < 10) {
-      minute = '0' + minute
+      minute = "0" + minute;
     }
     if (second < 10) {
-      second = '0' + second
+      second = "0" + second;
     }
-    document.getElementById('time').innerText = day + '.' + hour + ':' + minute + ':' + second
+    document.getElementById('time').innerText = month + "-" + day + " " + hour + ":" + minute + ":" + second;
   }, 1000)
 </script>
