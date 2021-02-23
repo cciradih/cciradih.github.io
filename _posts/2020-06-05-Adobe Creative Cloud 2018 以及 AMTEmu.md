@@ -8,11 +8,11 @@ tags:
 
 > 下次一定！
 
-# 前言
+## 前言
 
 最近想做视频，然后 CC 2020 破解有问题，更糟的是好死不死 Adobe 隐藏得极深的离线包下载页面被删了，不过找到了还可用的 CC 2018 官方离线包链接，且下且珍惜！
 
-# 下载
+## 下载
 
 * [After Effects](http://prdl-download.adobe.com/After%20Effects/FDF6C521034E467BB283B5837FA042FF/1509090722739/AdobeAfterEffects15AllTrial.zip)
 * [Audition](http://prdl-download.adobe.com/Audition/A26ECCB044C24810B1B2E7A0A3323B3E/1507818438900/AdobeAudition11All.zip)

@@ -7,11 +7,6 @@ tags:
   - Windows Subsystem for Linux
 ---
 
-> 别跟我提 MacOS 那个收智商税的玩意！（酸）
-
-## 前言
-以前很口水 MacOS 的 CLI 与 GUI 完美结合的体验，然而其价格实在太美丽，遂寻他法，让我找到个比较接近 MacOS 的解决方案。
-
 ## 准备
 
 * [Windows 10 Build 高于 19041（2020 年 5 月更新）](https://www.microsoft.com/zh-cn/software-download/windows10)

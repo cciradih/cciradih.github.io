@@ -6,11 +6,6 @@ tags:
   - Shadowsocks
 ---
 
-> 听闻 Shadowsocks 也出了 Rust 版本了，~~我以后可能会更新 Rust 语言相关的文章~~。
-
-## 前言
-最近 Shadowsocks 又能用了，我觉得吧以后不行的时候再用 V2Ray，因为 V2Ray 的 Windows 客户端和网易 UU 加速器冲突，而我不想折腾。
-
 ## 准备
 
 * 一台 SSH 能连接的境外 VPS
