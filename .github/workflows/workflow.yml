@@ -1,20 +1,23 @@
 name: workflow
 on: [push]
 jobs:
-  build:
+  checkout:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v4
-
+  build:
+    runs-on: ubuntu-latest
+    steps:
       - name: build
         uses: actions/setup-node@v4
       - run: npm install
       - run: npm run build
-
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-      - run: echo ${{ secrets.GITHUB_TOKEN }}
