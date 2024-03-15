@@ -1,0 +1,1 @@
+[![workflow](https://github.com/cciradih/cciradih.github.io/actions/workflows/workflow.yml/badge.svg)](https://github.com/cciradih/cciradih.github.io/actions/workflows/workflow.yml)
